@@ -1,0 +1,60 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "westeurope"
+        },
+        "storageAccountName": {
+            "value": "storage150521"
+        },
+        "accountType": {
+            "value": "Standard_RAGRS"
+        },
+        "kind": {
+            "value": "StorageV2"
+        },
+        "accessTier": {
+            "value": "Hot"
+        },
+        "minimumTlsVersion": {
+            "value": "TLS1_2"
+        },
+        "supportsHttpsTrafficOnly": {
+            "value": true
+        },
+        "allowBlobPublicAccess": {
+            "value": true
+        },
+        "allowSharedKeyAccess": {
+            "value": true
+        },
+        "networkAclsBypass": {
+            "value": "AzureServices"
+        },
+        "networkAclsDefaultAction": {
+            "value": "Allow"
+        },
+        "isContainerRestoreEnabled": {
+            "value": false
+        },
+        "isBlobSoftDeleteEnabled": {
+            "value": true
+        },
+        "blobSoftDeleteRetentionDays": {
+            "value": 7
+        },
+        "changeFeed": {
+            "value": true
+        },
+        "isVersioningEnabled": {
+            "value": true
+        },
+        "isShareSoftDeleteEnabled": {
+            "value": true
+        },
+        "shareSoftDeleteRetentionDays": {
+            "value": 7
+        }
+    }
+}

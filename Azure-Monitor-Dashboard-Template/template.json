@@ -1,0 +1,49 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "dashboards_8b83bde2_3153_47a2_82fb_9aebd39e1244_name": {
+            "defaultValue": "8b83bde2-3153-47a2-82fb-9aebd39e1244",
+            "type": "String"
+        }
+    },
+    "variables": {},
+    "resources": [
+        {
+            "type": "Microsoft.Portal/dashboards",
+            "apiVersion": "2020-09-01-preview",
+            "name": "[parameters('dashboards_8b83bde2_3153_47a2_82fb_9aebd39e1244_name')]",
+            "location": "westeurope",
+            "tags": {
+                "hidden-title": "MonitorDashboard"
+            },
+            "properties": {
+                "lenses": [
+                    {
+                        "order": 0,
+                        "parts": [
+                            {
+                                "position": {
+                                    "x": 0,
+                                    "y": 0,
+                                    "rowSpan": 4,
+                                    "colSpan": 6
+                                },
+                                "metadata": {
+                                    "inputs": [
+                                        {},
+                                        {}
+                                    ],
+                                    "type": "Extension/HubsExtension/PartType/MonitorChartPart"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "metadata": {
+                    "model": {}
+                }
+            }
+        }
+    ]
+}
